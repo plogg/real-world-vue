@@ -1,35 +1,37 @@
-events: [
-    {
-    id:5929001,
-    category: 'animal welfare',
-    title: 'Cat Adoption Day', 
-    description: 'find your new feline',
-    location: 'MEow Town',
-    date: 'January 28, 2022',
-    time: '12:00',
-    petsAllowed:true,
-    organizer: 'Kat Laydee'
-    },
-    {
-    id:5929002,
-    category: 'animal welfare',
-    title: 'Cat Adoption Day', 
-    description: 'find your new feline',
-    location: 'MEow Town',
-    date: 'January 28, 2022',
-    time: '12:00',
-    petsAllowed:true,
-    organizer: 'Kat Laydee'
-    }, 
-    {
-    id:5929003,
-    category: 'animal welfare',
-    title: 'Cat Adoption Day', 
-    description: 'find your new feline',
-    location: 'MEow Town',
-    date: 'January 28, 2022',
-    time: '12:00',
-    petsAllowed:true,
-    organizer: 'Kat Laydee'
-    } 
- ] 
+{
+   "events": [
+      {
+         "id": 5929001,
+         "category": "animal welfare",
+         "title": "Cat Adoption Day",
+         "description": "find your new feline",
+         "location": "MEow Town",
+         "date": "January 28, 2022",
+         "time": "12:00",
+         "petsAllowed": true,
+         "organizer": "Kat Laydee"
+      },
+      {
+         "id": 5929002,
+         "category": "animal welfare",
+         "title": "Cat Adoption Day",
+         "description": "find your new feline",
+         "location": "MEow Town",
+         "date": "January 28, 2022",
+         "time": "12:00",
+         "petsAllowed": true,
+         "organizer": "Kat Laydee"
+      },
+      {
+         "id": 5929003,
+         "category": "animal welfare",
+         "title": "Cat Adoption Day",
+         "description": "find your new feline",
+         "location": "MEow Town",
+         "date": "January 28, 2022",
+         "time": "12:00",
+         "petsAllowed": true,
+         "organizer": "Kat Laydee"
+      }
+   ]
+}
