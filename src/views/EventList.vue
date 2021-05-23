@@ -1,7 +1,5 @@
 <template>
-  <div class="event">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <h1>Titre EventCard</h1>
+  <div class="events">
     <EventCard v-for="event in events" :key="event.id" :event="event" />
   </div>
 </template>
@@ -9,53 +7,28 @@
 <script>
 // @ is an alias to /src
 import EventCard from "@/components/EventCard.vue";
+import EventService from "@/services/EventService.js";
 
 export default {
-  name: "Home",
+  name: 'EventList',
   components: {
     EventCard
   },
   data() {
     return {
-      events: [
-        {
-        id:5929001,
-        category: 'animal welfare',
-        title: 'Cat Adoption Day', 
-        description: 'find your new feline',
-        location: 'MEow Town',
-        date: 'January 28, 2022',
-        time: '12:00',
-        petsAllowed:true,
-        organizer: 'Kat Laydee'
-        },
-        {
-        id:5929002,
-        category: 'animal welfare',
-        title: 'Cat Adoption Day', 
-        description: 'find your new feline',
-        location: 'MEow Town',
-        date: 'January 28, 2022',
-        time: '12:00',
-        petsAllowed:true,
-        organizer: 'Kat Laydee'
-        }, 
-        {
-        id:5929003,
-        category: 'animal welfare',
-        title: 'Cat Adoption Day', 
-        description: 'find your new feline',
-        location: 'MEow Town',
-        date: 'January 28, 2022',
-        time: '12:00',
-        petsAllowed:true,
-        organizer: 'Kat Laydee'
-        } 
-       ] 
+      events: null
     }
+   },
+  created() {
+    EventService.getEvents()
+      .then(response => {
+        this.events = response.data
+      })
+      .catch(error => {
+        console.log(error)
+      })
   }
-
-};
+}
 </script>
 
 <style scoped>
